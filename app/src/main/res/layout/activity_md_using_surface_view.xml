@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nokia.streamer.MD360PlayerActivity">
+
+   <FrameLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <android.opengl.GLSurfaceView
+          android:id="@+id/gl_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <TextView
+             android:id="@+id/hotspot_point1"
+             android:text="+"
+             android:textColor="@android:color/white"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent" />
+         <TextView
+             android:id="@+id/hotspot_point2"
+             android:text="+"
+             android:textColor="@android:color/white"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent" />
+      </LinearLayout>
+   </FrameLayout>
+
+   <ScrollView
+       android:layout_width="160dp"
+       android:paddingBottom="20dp"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </LinearLayout>
+   </ScrollView>
+
+   <TextView
+       android:layout_alignParentBottom="true"
+       android:id="@+id/hotspot_text"
+       android:textColor="@android:color/white"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+   <TextView
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:id="@+id/director_brief_text"
+       android:textColor="@android:color/white"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</RelativeLayout>
